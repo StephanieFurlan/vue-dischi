@@ -15,6 +15,41 @@ body {
    height: 80px;
    background-color: #F2CD54;
 }
+#filters label {
+   font-size: 18px;
+}
+
+
+#btn {
+   padding: 10px 20px;
+   border-radius: 10px;
+   background-color: #323234;;
+   color: #F2CD54;
+   border: none;
+   cursor: pointer;
+}
+
+
+
+button:focus,
+select:focus {
+   outline:0;
+}
+
+
+
+#genres {
+   display: inline-block;
+}
+
+#genres select {
+   padding: 8px 16px;
+   border-radius: 10px;
+   cursor: pointer;
+   background-color: #323234;
+   color: #F2CD54;
+}
+
 
 .discs-container {
    padding: 20px;

@@ -15,7 +15,7 @@
       <div id="app">
          <div id="filters">
             <!-- @change="searchAuthor" -->
-            <div>
+            <div id="genres">
                <label>Choose genre: </label>
                <select v-model="selected">
                   <option>All</option>
@@ -24,6 +24,7 @@
                  </option>
                </select>
             </div>
+            <button id="btn" @click="sortMe">{{buttonText}}</button>
          </div>
          <div class="discs-container">
             <div v-show="disc.genre == selected || selected == 'All'" v-for="disc in discs" class="disc-card">
