@@ -10,7 +10,8 @@ body {
    background-color: #323234;
 }
 
-header {
+#filters {
+   padding: 20px;
    height: 80px;
    background-color: #F2CD54;
 }

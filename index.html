@@ -13,11 +13,20 @@
    </head>
    <body>
       <div id="app">
-         <header>
-
-         </header>
+         <div id="filters">
+            <!-- @change="searchAuthor" -->
+            <div>
+               <label>Choose genre: </label>
+               <select v-model="selected">
+                  <option>All</option>
+                  <option v-for="genre in genres" v-bind:value="genre">
+                   {{ genre }}
+                 </option>
+               </select>
+            </div>
+         </div>
          <div class="discs-container">
-            <div v-for="disc in discs" class="disc-card">
+            <div v-show="disc.genre == selected || selected == 'All'" v-for="disc in discs" class="disc-card">
                <div>
                   <img :src="disc.poster" alt="">
                   <h2 class="title">{{ disc.title }}</h2>
